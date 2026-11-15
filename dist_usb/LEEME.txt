@@ -1,0 +1,25 @@
+================================================================================
+PAQUETE DE ACTUALIZACIÓN DRON-LINK (FASE 2: STREAMING REAL-TIME ToF / RGB-D)
+================================================================================
+
+CONTENIDO:
+  1. nodo_dron            - Binario nativo ARM64 (aarch64) release optimizado
+  2. stream_d415.py       - Emisor streaming en vivo D415 (R3D1 / R3U1 / R3C1)
+  3. actualizar.sh        - Script de actualización automática en la Raspberry Pi
+  4. dron-link.service    - Archivo de servicio systemd configurado
+  5. instalar_en_pi.sh    - Script de instalación desde cero (si fuera necesario)
+
+INSTRUCCIONES DE ACTUALIZACIÓN EN LA RASPBERRY PI:
+  1. Conecta la memoria USB a la Raspberry Pi.
+  2. Abre una terminal (o vía SSH si tienes consola).
+  3. Ubica la carpeta de la USB y ejecuta:
+       sudo bash actualizar.sh
+     (o ./actualizar.sh)
+
+  El script automáticamente:
+    - Detiene la versión anterior para evitar 'Text file busy'.
+    - Crea un respaldo (nodo_dron.bak).
+    - Instala el nuevo binario ARM64 y el script stream_d415.py.
+    - Actualiza el demonio systemd con los parámetros de streaming.
+    - Reinicia el servicio y muestra el estado en pantalla.
+================================================================================

@@ -1,0 +1,5 @@
+/home/jaguar/Dev/nasa/dron-link/target/debug/build/serde-2cd09bd034e29905/build_script_build-2cd09bd034e29905.d: /home/jaguar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/build.rs
+
+/home/jaguar/Dev/nasa/dron-link/target/debug/build/serde-2cd09bd034e29905/build_script_build-2cd09bd034e29905: /home/jaguar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/build.rs
+
+/home/jaguar/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/build.rs:

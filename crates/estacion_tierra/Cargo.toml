@@ -1,0 +1,15 @@
+[package]
+name = "estacion_tierra"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+protocolo_comun = { path = "../protocolo_comun" }
+tokio = { version = "1.38", features = ["full"] }
+clap = { version = "4.5", features = ["derive"] }
+sha2 = "0.10"
+indicatif = "0.17"
+chrono = "0.4"
+anyhow = "1.0"
+socket2 = "0.6"

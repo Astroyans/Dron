@@ -1,0 +1,1 @@
+/home/jaguar/Dev/nasa/dron-link/target/debug/nodo_dron: /home/jaguar/Dev/nasa/dron-link/crates/nodo_dron/src/main.rs /home/jaguar/Dev/nasa/dron-link/crates/nodo_dron/src/process.rs /home/jaguar/Dev/nasa/dron-link/crates/nodo_dron/src/sync_server.rs /home/jaguar/Dev/nasa/dron-link/crates/nodo_dron/src/wifi.rs /home/jaguar/Dev/nasa/dron-link/crates/protocolo_comun/src/lib.rs

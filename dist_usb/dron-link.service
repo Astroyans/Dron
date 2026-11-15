@@ -1,0 +1,19 @@
+[Unit]
+Description=Dron-Link: Demonio Embebido ToF y Streaming Real-Time (Intel RealSense D415)
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi
+ExecStartPre=-/usr/sbin/iw dev wlan0 set power_save off
+ExecStart=/usr/local/bin/nodo_dron --udp-port 5000 --tcp-port 5001 --script-path /home/pi/tof/main.py --stream-script-path /home/pi/tof/stream_d415.py --stream-target 192.168.4.1:8766 --python-bin python3 --data-dir /home/pi/tof/capturas_relieve --iface wlan0
+Restart=always
+RestartSec=3
+KillMode=mixed
+TimeoutStopSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
